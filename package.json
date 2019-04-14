@@ -6,5 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "node build.js"
+  },
+  "devDependencies": {
+    "fast-glob": "^2.2.6"
   }
 }
