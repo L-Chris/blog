@@ -2,13 +2,15 @@
 
 ## 方案
 
+
+
 目前统一通过集成MobLink Web Sdk完成
 
 ## 使用方法
 
 ```
 // 集成web sdk，appkey见下表
-<script type="text/javascript" src="//f.moblink.mob.com/3.0.1/moblink.js?appkey=4e6d124ab07c">    </script>
+<script type="text/javascript" src="//f.moblink.mob.com/3.0.1/moblink.js?appkey=appkey">    </script>
 
 // html
 <a id="download_down" class="link">查看我的孩子</a>

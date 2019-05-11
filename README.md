@@ -9,18 +9,18 @@
 - 基础设施
   - [Docker](https://github.com/L-Chris/blog/blob/master/基础设施/Docker.md)
   - [Gitlab](https://github.com/L-Chris/blog/blob/master/基础设施/Gitlab.md)
-  - [私有npm](https://github.com/L-Chris/blog/blob/master/基础设施/私有npm.md)
   - [Jenkins](https://github.com/L-Chris/blog/blob/master/基础设施/Jenkins.md)
-
-- 工程杂谈
-  - [代理和开发调试](https://github.com/L-Chris/blog/blob/master/工程杂谈/代理和开发调试.md)
-  - [代码测试](https://github.com/L-Chris/blog/blob/master/工程杂谈/代码测试.md)
-  - [代码规范和格式化](https://github.com/L-Chris/blog/blob/master/工程杂谈/代码规范和格式化.md)
-  - [代码部署](https://github.com/L-Chris/blog/blob/master/工程杂谈/代码部署.md)
+  - [私有npm](https://github.com/L-Chris/blog/blob/master/基础设施/私有npm.md)
 
 - 原创作品
   - [hostie](https://github.com/L-Chris/blog/blob/master/原创作品/hostie.md)
   - [vue-design](https://github.com/L-Chris/blog/blob/master/原创作品/vue-design.md)
+
+- 工程杂谈
+  - [代码规范和格式化](https://github.com/L-Chris/blog/blob/master/工程杂谈/代码规范和格式化.md)
+  - [代码部署](https://github.com/L-Chris/blog/blob/master/工程杂谈/代码部署.md)
+  - [代码测试](https://github.com/L-Chris/blog/blob/master/工程杂谈/代码测试.md)
+  - [代理和开发调试](https://github.com/L-Chris/blog/blob/master/工程杂谈/代理和开发调试.md)
 
 - 最佳实践
   - [图片处理](https://github.com/L-Chris/blog/blob/master/最佳实践/图片处理.md)
