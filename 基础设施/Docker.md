@@ -46,3 +46,12 @@ systemctl daemon-reload
 ```bash
 systemctl restart docker
 ```
+
+## 三、问题
+
+### 3.1 docker attach卡住情况
+当容易在```-d```状态运行时，运行的进程是ssh，而不是```/bin/bash```也没有虚拟终端(-it)参数，所以不能进入。
+此时可用exec命令：
+```
+docker exec -it containerID /bin/bash
+```
