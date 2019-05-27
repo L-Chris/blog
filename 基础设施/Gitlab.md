@@ -162,3 +162,10 @@ systemctl start gitlab-runsvdir.service
 systemctl status gitlab-runsvdir.service
 gitlab-ctl start
 ```
+
+- 备份
+```bash
+gitlab-ctl stop unicorn
+gitlab-ctl stop sidekiq
+gitlab-rake gitlab:backup:restore BACKUP=1510472027_2017_11_12_9.4.5
+```

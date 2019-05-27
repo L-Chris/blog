@@ -48,9 +48,12 @@ sudo systemctl start docker
 systemctl daemon-reload
 ```
 
-- 重启docker服务
+- 启动docker服务
 ```bash
-systemctl restart docker
+# 开机自动启动
+sudo systemctl enable docker
+# 启动
+sudo systemctl restart docker
 ```
 
 ## 三、问题
@@ -60,4 +63,9 @@ systemctl restart docker
 此时可用exec命令：
 ```
 docker exec -it containerID /bin/bash
+```
+
+### 3.2 virtualbox共享文件夹挂载
+```bash
+sudo mount -t vboxsf name dir
 ```
