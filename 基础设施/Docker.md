@@ -4,7 +4,22 @@
 
 ### 1.1 linux环境
 
-#### 1.1.1 设置Docker镜像
+#### 1.1.1 Centos7镜像
+```bash
+curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+```
+
+#### 1.1.2 安装git
+
+```bash
+yum install -y epel-release && \
+rpm -ivh https://repo.ius.io/ius-release-el7.rpm && \
+yum list git2u && \
+yum install -y git2u && \
+git --version
+```
+
+#### 1.1.3 设置Docker镜像
 
 安装相关依赖
 ```bash
@@ -16,26 +31,27 @@ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-#### 1.1.2 安装Docker CE
+#### 1.1.4 安装Docker CE
 ```bash
 sudo yum install docker-ce docker-ce-cli containerd.io
 ```
 
-#### 1.1.3 安装Docker Compose
+#### 1.1.5 安装Docker Compose
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-#### 1.1.4 启动Docker
+#### 1.1.6 启动Docker
 ```bash
 sudo systemctl start docker
 ```
 
-#### 1.1.5 汇总
+#### 1.1.7 汇总
 
 ##### centos7
 ```bash
+sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo && \
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2 && \
 sudo yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo && \
 sudo yum install docker-ce docker-ce-cli containerd.io && \
